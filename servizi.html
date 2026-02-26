@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BD agency | Servizi</title>
+
+  <link rel="icon" type="image/png" href="images/1.png">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <img src="logo/2.png" alt="BDCODE logo">
+    </div>
+
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-link" href="index.html#home">home</a>
+      <a class="nav-link" href="index.html#progetti">Progetti</a>
+      <a class="nav-link" href="index.html#recensioni">Recensioni</a>
+
+      
+    </nav>
+
+    <div class="header-actions">
+      <button
+        class="contact-btn"
+        onclick="document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })">
+        contattaCI
+      </button>
+
+      <button class="nav-toggle" aria-label="Apri menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+<div style="height: 24px;"></div>
+  <main id="servizi" style="padding-top: 0px;">
+   <section class="about-section" id="servizi-section" style="margin-top: 0; padding-top: 0;"></section>
+      <h2 class="about-title" style="margin-top: 0;">
+  SERVIZI
+</h2>
+
+      <div class="bento-grid">
+
+        <div class="card intro">
+          <img src="images/gradient.png" alt="" class="background-img">
+          <h2 class="card-title">E-COMMERCE</h2>
+          <p class="card-text">
+            Progettiamo e sviluppo piattaforme e-commerce performanti, pensate per convertire
+            visitatori in clienti.
+            <br><br>
+            Struttura chiara, UX ottimizzata e checkout fluido per offrire un’esperienza
+            d’acquisto semplice, veloce e affidabile.
+          </p>
+        </div>
+
+        <div class="card tech">
+          <img src="images/gradient 2.png" alt="" class="background-img">
+          <h2 class="card-title">DIGITAL MARKETING</h2>
+          <p class="card-text">
+            Strategie orientate alla crescita: visibilità, traffico e conversioni con azioni
+            misurabili e coerenti.
+            <br><br>
+            Dall’analisi degli obiettivi alle campagne, lavoriamo per creare una presenza online
+            efficace e sostenibile nel tempo.
+          </p>
+        </div>
+
+        <div class="card time">
+          <img src="images/gradient3&4.png" alt="" class="background-img">
+          <h2 class="card-title">BRANDING</h2>
+          <p class="card-text">
+            Costruiamo identità visive riconoscibili e coerenti, capaci di comunicare valori,
+            personalità e posizionamento.
+            <br><br>
+            Un brand forte non è solo estetica: è strategia, fiducia e memorabilità.
+          </p>
+        </div>
+
+        <div class="card passion">
+          <img src="images/gradient3&4.png" alt="" class="background-img">
+          <h2 class="card-title">WEB DESIGN & DEVELOPMENT</h2>
+          <p class="card-text">
+            Realizziamo siti moderni, responsive e orientati all’esperienza utente.
+            <br><br>
+            Design, performance e dettagli visivi lavorano insieme per un risultato pulito,
+            professionale e ad alta conversione.
+          </p>
+        </div>
+
+      </div>
+
+     <div
+  style="
+    margin-top: 64px;     /* distanza dalle card */
+    margin-bottom: 80px;  /* distanza dal form */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;            /* spazio tra testo e bottone */
+  "
+>
+  <p
+    style="
+      margin: 0;
+      font-size: 15px;    /* stessa scala del sottotitolo contatti */
+      opacity: 0.85;
+    "
+  >
+    Vuoi capire quale servizio è adatto alla tua attività?
+  </p>
+
+  <button
+    class="contact-btn"
+    style="
+      transform: scale(1.25);
+      transform-origin: center;
+    "
+    onclick="document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' })"
+  >
+    PRENOTA UNA CALL
+  </button>
+</div>
+
+    </section>
+
+    
+    <section class="contact-section" id="contact">
+      <div class="section-header">
+        <h2 style="font-size: 2.5rem;">DAI VALORE ALLA TUA PRESENZA ONLINE</h2>
+        <p>hai un progetto in mente per la attività ? compila il form qui sotto</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="info-cards">
+          <h3>Informazioni di contatto</h3>
+
+          <div class="contact-item">
+            <p>email</p>
+            <a href="#">helloexample@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <p>telefono</p>
+            <a href="#">+39 3272506073</a>
+          </div>
+
+          <div class="contact-item">
+            <p>città</p>
+            <a href="#">Brescia,BS</a>
+          </div>
+
+          <div class="social-link">
+            <p>mi puoi trovare su</p>
+            <a href="https://github.com/belpietrodavide01-beep">github</a>
+            <a href="https://www.linkedin.com/in/davide-belpietro-063433359">linkedin</a>
+            <a href="https://www.instagram.com/__belpietrodavide__">instagram</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-content">
+            <h3>PARLA CON UN ESPERTO</h3>
+
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="from_name" placeholder="Your name" required minlength="2" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" name="reply_to" placeholder="Your Email" required class="form-control">
+              </div>
+
+              <div class="form-group">
+                <input type="text" id="subject" name="subject" placeholder="subject" required minlength="3" class="form-control">
+              </div>
+
+              <div class="form-group">
+                <textarea name="message" id="message" placeholder="Your Message" required minlength="10" class="form-control"></textarea>
+              </div>
+
+              <button type="submit" id="submitBtn" class="message-btn">invia</button>
+
+              <div class="success-message" id="successMessage">
+                Message sent succesfully! I'll get back to you soon.
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer-minimal">
+    <div class="footer-minimal-row">
+      <span class="footer-brand">BDAGENCY © <span id="footerYear"></span></span>
+      <a href="#" class="footer-privacy"> Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
